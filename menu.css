@@ -61,7 +61,7 @@ nav li a{
     color: #fff;
     margin-top: 7.5rem;
     margin-left: 6rem;
-    font-weight: lighter;
+    font-weight: normal;
 }
 #showcase h1{
     font-size: 6rem;
@@ -160,14 +160,12 @@ nav li a{
     color: #fff;
     padding-top: 8rem;
     padding-left: -1rem;
-    font-weight: normal;
+    font-weight: lighter;
 }
 #showcase1 h1{
     font-size: 4rem;
     color: #fff;
     padding-top: 1rem;
-    padding-left: -2rem;
-    padding-right: 100px;
 }
 
 #showcase1 p{   
@@ -342,9 +340,7 @@ nav li a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 15rem;
-    padding-bottom: 2rem;
-
-    
+    padding-bottom: 2rem;  
 }
 
 .showcase5 h6{
@@ -352,9 +348,7 @@ nav li a{
     padding-top: 9rem;
     color: rgb(198, 198, 198);
    font-weight: normal;
-   padding-bottom: 5rem;
-
-   
+   padding-bottom: 5rem; 
 
 }
 
@@ -396,13 +390,14 @@ input[type=message] {
     text-decoration: none;
     outline: none;
 }
-#showcase5 i{
+.showcase5 .left-button{
     font-size: 2rem;
     color: white;
+    margin-left: 9.5rem;
 }
 
 .showcase5 h5{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-left: 20px;
     color: white;
     font-weight: normal;
@@ -419,7 +414,7 @@ input[type=message] {
 }
 
 .showcase5 p{
-    width: 100%;
+    width: 120%;
     color: white;
     text-align: center;
     line-height: 2rem;
@@ -449,8 +444,59 @@ input[type=message] {
 footer{
     height: 200px;
     background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+.flex4{
+    display: flex;
+    
+    
+}
+
+footer img{
+    width: 3.5rem;
+    padding-top: 5rem;
+    padding-left: 8rem;
 
 }
+    
+
+footer p{
+    font-size: 0.9rem;
+    padding-top: 5rem;   
+    padding-left: 1.5rem;
+
+
+}
+
+footer h6{
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+footer i{
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+footer .social{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-top: -2rem;   
+    margin-right: 5rem;
+   
+}
+
+
+
+
+
+
+
+
 
 
 
