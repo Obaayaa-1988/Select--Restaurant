@@ -1,0 +1,502 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+/*Main Showcase Styling */
+
+#showcase{
+    background-image: url(images/restaurant.jpg);
+    min-height: 1150px; 
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+
+    
+}
+/*Styling Showcase Navigation*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 850px;
+    margin-top: -30px;
+}
+
+nav li a:hover{
+    color: rgb(0, 128, 255);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    list-style: none;
+}
+
+nav li a{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 0.8rem;
+    color: #fff;
+}
+
+.logo img{
+    width: 7rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+#showcase p{
+    font-size: 3.2rem;
+    color: #fff;
+    margin-top: 7.5rem;
+    margin-left: 6rem;
+    font-weight: lighter;
+}
+#showcase h1{
+    font-size: 6rem;
+    color: #fff;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    width: 800px;
+    
+}
+
+/* Styling Cards with Images */
+.main-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    row-gap: 1rem;
+    column-gap: 2rem;
+    margin-top: 10.5rem;
+}
+
+.cards{
+    background-color: #fff;
+    padding: 3rem 4.2rem;
+}
+
+.main-cards img{
+    display: block;
+    height: 171px;
+    width: 268px;
+    margin-top: -42px;
+    margin-left: -62px;
+    padding-bottom: 3rem;
+}
+
+ .main-cards h4{
+    font-size: 1rem;
+    color: rgb(36, 36, 36);
+    width: 200px;
+   
+
+}.main-cards h2{
+    font-size: 1rem;
+    color: rgb(36, 36, 36);
+    font-size: 2rem; 
+}
+
+/**Styling Section1 **/
+
+#container2{
+    width: 80%;
+    margin: auto;
+}
+
+.section1{
+    min-height: 90vh;
+    background-color: rgb(240, 240, 240);
+}
+
+.section1 h6{
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(74, 74, 74);
+    padding-top: 9rem;
+}
+
+.section1 p{
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5rem;
+    
+    color: rgb(121, 121, 121);
+    width: 650px;
+    padding-top: 4rem;
+}
+
+.section1 img{
+    display: block;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+/**Styling Section2 **/
+#showcase1{
+    background-image: url(images/checked_menu.jpg);
+    min-height: 600px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: block;
+    
+}
+
+#showcase1 h6{
+    font-size: 4rem;
+    color: #fff;
+    padding-top: 8rem;
+    padding-left: -1rem;
+    font-weight: normal;
+}
+#showcase1 h1{
+    font-size: 4rem;
+    color: #fff;
+    padding-top: 1rem;
+    padding-left: -2rem;
+    padding-right: 100px;
+}
+
+#showcase1 p{   
+    font-size: 1rem;
+    color: rgb(166, 166, 166);
+    padding-top: 4rem;
+    padding-left: -2rem;
+    padding-right: 100px;
+}
+
+#showcase1 button{
+    padding: 1.5rem 3rem;
+    margin-top: 4rem;
+    color: white;
+    background-color: rgb(255, 155, 53);
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+#showcase1 i{
+    font-size: 2rem;
+    color: white;
+}
+
+#showcase1 h5{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: white;
+    font-weight: normal;
+    
+}
+
+#showcase1 button{
+    display: flex;
+}
+
+#showcase1 button:hover{
+    color: white;
+    background-color: rgb(236, 183, 0);
+}
+
+/**Styling Section3**/
+.section3{
+    min-height: 70vh;
+    background-color: rgb(230, 230, 230);
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+    
+}
+
+
+.section3 h6{
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    color: rgb(25, 25, 25);
+    font-size: 1.7rem;
+    text-align: center;
+   
+}
+
+.section3 img{
+    margin-left: 1.5rem;
+}
+
+.section3 p{
+    width: 300px;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: rgb(121, 121, 121);
+    text-align: center;  
+}
+
+/**Styling Section4 **/
+.showcase3{
+    background-image: url(images/bg21.jpg);
+    min-height: 80vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    position: relative;
+}
+
+.showcase3 i{
+    font-size: 2rem;
+    color: rgb(255, 155, 53);
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.showcase3 span{
+    position: absolute;
+    top: 10px;
+    left: 600px;
+}
+
+
+.showcase3 p{
+    color: #fff;
+    padding-top: 15rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.showcase3 small{
+    color: grey;
+    font-size: 1rem;
+    position: absolute;
+    top: 300px;
+    left: 800px;
+}
+
+/**Styling Section4**/
+
+
+.showcase4{
+    min-height: 50vh; 
+    background-color: rgb(241, 241, 214);
+    padding-top: 8rem;
+   
+}
+
+.main-grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 100px;
+
+}
+
+.showcase4 i{
+    color: rgb(181, 181, 181);
+    font-size: 4rem;
+    margin-left: 2rem;
+    
+}
+
+.showcase4 h6{
+    color: black;
+    font-size: 4.5rem;
+    font-weight: normal;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.showcase4 small{
+    color: black;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 2rem;
+}
+
+/**Styling Section5**/
+.showcase5{
+    background-image: url(images/wooden2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+      
+}
+
+.flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15rem;
+    padding-bottom: 2rem;
+
+    
+}
+
+.showcase5 h6{
+    font-size: 3rem;
+    padding-top: 9rem;
+    color: rgb(198, 198, 198);
+   font-weight: normal;
+   padding-bottom: 5rem;
+
+   
+
+}
+
+input[type=text], input[type=email] {
+    display: inline;
+    width: 120%;
+    height: 4rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background: transparent;
+    font-size: 1rem;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+input[type=message] {
+    display: inline;
+    width: 120%;
+    height: 9rem;
+    border-top: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    font-size: 1rem;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+
+.showcase5 button{
+    padding: 1.5rem 3rem;
+    width: 120%;
+    margin-top: 3rem;
+    color: white;
+    background-color: rgb(255, 155, 53);
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+#showcase5 i{
+    font-size: 2rem;
+    color: white;
+}
+
+.showcase5 h5{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: white;
+    font-weight: normal;
+    
+}
+
+.showcase5 button{
+    display: flex;
+}
+
+.showcase5 button:hover{
+    color: white;
+    background-color: rgb(236, 183, 0);
+}
+
+.showcase5 p{
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 3rem ;
+}
+
+.showcase5 .heart{
+    font-size: 2rem;
+    color: white;
+    
+}
+
+.showcase5 span{
+    font-size: 1rem;
+    color: black;
+    font-weight: normal;
+    margin-left: 2rem;
+}
+
+.showcase5 .span{
+    padding-bottom: 2rem ;
+}
+
+/**Styling Footer**/
+footer{
+    height: 200px;
+    background-color: rgb(44, 44, 44);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container{
+    width: 90%;
+    margin: auto;
+    overflow:hidden ;
+}
