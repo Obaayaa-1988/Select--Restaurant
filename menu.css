@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto',sans-serif;
 
 }
 /*Main Showcase Styling */
@@ -15,97 +19,118 @@ body{
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    display: block;
-
-    
+    background-position: center;   
 }
+
 /*Styling Showcase Navigation*/
+
+header{
+display: flex;
+justify-content: space-between;
+width: 100%;
+padding-top: 2rem;
+padding-right: 2rem;
+padding-left: 2rem;
+background-color: #252830;
+align-items: center;
+position: sticky;
+top: 0;
+}
 
 nav{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
-    margin-left: 850px;
-    margin-top: -30px;
 }
+
 
 nav li a:hover{
     color: rgb(0, 128, 255);
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
     list-style: none;
+    display: flex;
+
 }
 
 nav li a{
     display: inline-block;
     text-decoration: none;
-    margin-left: 30px;
     font-size: 0.8rem;
     color: #fff;
+    margin-left: 30px;;
 }
 
 .logo img{
     width: 7rem;
-    padding-top: 3rem;
-    padding-left: 2rem;
 }
 
-#showcase p{
+/** styling the hamburger menu**/
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+}
+.hamburger:focus{
+    outline: none;
+}
+
+
+#showcase h6{
     font-size: 3.2rem;
     color: #fff;
     margin-top: 7.5rem;
     margin-left: 6rem;
     font-weight: normal;
 }
+
 #showcase h1{
-    font-size: 6rem;
+    font-size: 8rem;
     color: #fff;
     margin-top: 1rem;
     margin-left: 4rem;
-    width: 800px;
+    width: 40rem;
+    font-weight: bolder;
     
 }
 
 /* Styling Cards with Images */
 .main-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    row-gap: 1rem;
-    column-gap: 2rem;
-    margin-top: 10.5rem;
+ display: flex;
+ justify-content: center;
+ gap: 1.7em;
+ margin-top: 8rem;
+    
 }
 
-.cards{
-    background-color: #fff;
-    padding: 3rem 4.2rem;
+.card-inner{
+    width: 15em;
+    height:19em;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
 }
 
-.main-cards img{
-    display: block;
-    height: 171px;
-    width: 268px;
-    margin-top: -42px;
-    margin-left: -62px;
-    padding-bottom: 3rem;
+.card-inner img{
+    width: 100%;
+    height: 100%;
 }
 
- .main-cards h4{
+.card-text h4{
     font-size: 1rem;
-    color: rgb(36, 36, 36);
-    width: 200px;
-   
-
-}.main-cards h2{
-    font-size: 1rem;
-    color: rgb(36, 36, 36);
-    font-size: 2rem; 
+    margin-top: 2.5rem;
+    text-align: center;
+    font-weight: normal;
 }
+.card-text h2{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+} 
 
 /**Styling Section1 **/
 
@@ -116,22 +141,23 @@ nav li a{
 
 .section1{
     min-height: 90vh;
-    background-color: rgb(240, 240, 240);
+    background-color: rgba(240, 240, 240, 0.959);
+    width: 100%;
 }
 
 .section1 h6{
-    font-size: 2rem;
+    font-size: 3.2rem;
     text-align: center;
     color: rgb(74, 74, 74);
     padding-top: 9rem;
+    font-weight: normal;
 }
 
 .section1 p{
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin: auto;
     text-align: center;
-    line-height: 1.5rem;
-    
+    line-height: 1.5rem;  
     color: rgb(121, 121, 121);
     width: 650px;
     padding-top: 4rem;
@@ -140,47 +166,52 @@ nav li a{
 .section1 img{
     display: block;
     margin: auto;
+    width: 100%;
     margin-top: 4rem;
 }
 
 /**Styling Section2 **/
 #showcase1{
     background-image: url(images/checked_menu.jpg);
-    min-height: 600px; 
+    min-height: 700px; 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    display: block;
-    
+    display: block;  
+}
+
+.eaten1{
+    margin-bottom: 6em;
+    height: 40%;
+    width:80%;
+    padding-top:10%;  
+    padding-left: 8%; 
 }
 
 #showcase1 h6{
     font-size: 4rem;
-    color: #fff;
-    padding-top: 8rem;
-    padding-left: -1rem;
-    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.897);
+    font-weight: normal;
 }
 #showcase1 h1{
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: #fff;
-    padding-top: 1rem;
+    font-weight: bold;
 }
 
 #showcase1 p{   
     font-size: 1rem;
     color: rgb(166, 166, 166);
-    padding-top: 4rem;
-    padding-left: -2rem;
-    padding-right: 100px;
+    padding-top: 10%;
 }
 
 #showcase1 button{
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 1rem;
     margin-top: 4rem;
+    margin-left: 7rem;
     color: white;
-    background-color: rgb(255, 155, 53);
+    background-color: rgba(255, 154, 53, 0.822);
     border-radius: 10px;
     border: none;
     text-decoration: none;
@@ -271,7 +302,6 @@ nav li a{
     left: 600px;
 }
 
-
 .showcase3 p{
     color: #fff;
     padding-top: 15rem;
@@ -289,11 +319,15 @@ nav li a{
 
 /**Styling Section4**/
 
-
 .showcase4{
-    min-height: 50vh; 
-    background-color: rgb(241, 241, 214);
+    min-height: 75vh; 
+    width: 100%;
+    background-image: url(images/bg5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 8rem;
+    padding-bottom: 5rem;
    
 }
 
@@ -329,35 +363,40 @@ nav li a{
 
 /**Styling Section5**/
 .showcase5{
-    background-image: url(images/wooden2.jpg);
+    background-image: url(images/blackwood.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
       
+}
+.inner-wrap{
+    width: 85%;
+    margin: auto;
+    padding-bottom: 3rem;
 }
 
 .flex{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 15rem;
-    padding-bottom: 2rem;  
+    padding-bottom: 5rem;  
 }
 
 .showcase5 h6{
     font-size: 3rem;
     padding-top: 9rem;
-    color: rgb(198, 198, 198);
+    color: white;
    font-weight: normal;
    padding-bottom: 5rem; 
 
 }
 
-input[type=text], input[type=email] {
+input[type=text] {
     display: inline;
-    width: 120%;
+    width: 130%;
     height: 4rem;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 0.8px solid grey;
+    border-bottom: 0.8px solid grey;
     background: transparent;
     font-size: 1rem;
     border-left: none;
@@ -365,12 +404,24 @@ input[type=text], input[type=email] {
     outline: none;
 }
 
+input[type=email] {
+    display: inline;
+    width: 130%;
+    height: 4rem;
+    background: transparent;
+    font-size: 1rem;
+    border-left: none;
+    border-right: none;
+    outline: none;
+}
+
+
 input[type=message] {
     display: inline;
-    width: 120%;
+    width: 130%;
     height: 9rem;
     border-top: none;
-    border-bottom: 1px solid white;
+    border-bottom: 0.8px solid grey;
     background: transparent;
     font-size: 1rem;
     border-left: none;
@@ -381,14 +432,15 @@ input[type=message] {
 
 .showcase5 button{
     padding: 1.5rem 3rem;
-    width: 120%;
+    width: 130%;
     margin-top: 3rem;
     color: white;
     background-color: rgb(255, 155, 53);
-    border-radius: 10px;
+    border-radius: 15px;
     border: none;
     text-decoration: none;
     outline: none;
+
 }
 .showcase5 .left-button{
     font-size: 2rem;
@@ -411,10 +463,11 @@ input[type=message] {
 .showcase5 button:hover{
     color: white;
     background-color: rgb(236, 183, 0);
+    transition: 0.35s ease-in-out;
 }
 
 .showcase5 p{
-    width: 120%;
+    width: 100%;
     color: white;
     text-align: center;
     line-height: 2rem;
@@ -424,14 +477,14 @@ input[type=message] {
 }
 
 .showcase5 .heart{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     
 }
 
 .showcase5 span{
     font-size: 1rem;
-    color: black;
+    color:white;
     font-weight: normal;
     margin-left: 2rem;
 }
@@ -443,21 +496,18 @@ input[type=message] {
 /**Styling Footer**/
 footer{
     height: 200px;
-    background-color: rgb(44, 44, 44);
+    background-color: #252830;
     color: white;
 }
 
 .flex4{
-    display: flex;
-    
-    
+    display: flex;  
 }
 
 footer img{
-    width: 3.5rem;
+    width: 5rem;
     padding-top: 5rem;
     padding-left: 8rem;
-
 }
     
 
@@ -465,8 +515,6 @@ footer p{
     font-size: 0.9rem;
     padding-top: 5rem;   
     padding-left: 1.5rem;
-
-
 }
 
 footer h6{
@@ -476,9 +524,8 @@ footer h6{
 }
 
 footer i{
-    color: white;
-    font-size: 1.3rem;
-
+    color: rgb(166, 166, 166);
+    font-size: 1.6rem;
 }
 
 footer .social{
@@ -486,63 +533,12 @@ footer .social{
     justify-content: flex-end;
     gap: 2rem;
     margin-top: -2rem;   
-    margin-right: 5rem;
-   
+    margin-right: 5rem; 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #container{
-    width: 90%;
+    width: 80%;
     margin: auto;
     overflow:hidden ;
 }
