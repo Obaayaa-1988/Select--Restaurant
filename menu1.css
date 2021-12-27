@@ -1,7 +1,6 @@
+
+
 @media screen and (max-width:600px) {
-     *{
-         overflow-x: hidden;
-     }
 
      .nav-ul{
         display: none;
@@ -10,33 +9,46 @@
     }
 
     .nav-ul li a{
-    display: none;
     padding: 10px;
+    }
+
+    .nav-ul.show {
+        display: flex;
+
     }
 
     .hamburger{
         display: block;
     }
 
-    .nav-ul.show{
-        display: flex;
-        width: 100%;
-    }
-
 
     #showcase h6{
         font-size: 2.2rem;
+        text-align: center;
+        margin-left: -2rem;  
+        
     }
     #showcase h1{
-        font-size: 2.8rem;
-        width: 300px;
+        font-size: 2.5rem;
+        width: 320px;
+        text-align: center;
+        margin-left: 4rem; 
+    
     }
+
     .main-cards{
         display: block;
+        margin-left: -5px;
     }
+
+    .main-cards h2{
+        font-size: 10px;
+    }
+
+
     .card-inner{
         width: 21rem;
-        height: 22.1rem;
+        height: 22rem;
         margin-bottom: 3rem;
         margin-left: 0.8rem;
         overflow: hidden;
@@ -55,8 +67,9 @@
     }
 
     .section1 p{
-        width: 300px;
+        width: 400px;
         font-size: 1.2rem;
+        line-height: 1.7rem;
     }
     #showcase1{
         min-height: 600px;
@@ -90,29 +103,42 @@
     }
     .main-grid{
         display: block;
+        margin-left: 4rem;
     }
 
-    .main-grid2{
-        display: block;
-        text-align: center;
-        padding-bottom: 1rem;
+    .section3 h6{
+        margin-left: -1rem;
     }
+
+    .section3 p{
+        margin-bottom: 1.5rem;
+    }
+
+    
     .showcase3{
         overflow: hidden;
         position: relative;
     }
 
     .showcase3 p{
-        font-size: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
     }
 
     .showcase3 span{
         display: inline-flex;
     }
 
+    .main-grid2{
+        display: block;
+        margin-left: 7rem;
+        
+    }
+
 
     .flex{
         display: block;
+        
     }
 
     .showcase5 button{
@@ -129,6 +155,10 @@
 
     .icons i{
         margin: 1rem;
+    }
+
+    .showcase5 h6{
+        text-align: center;
     }
 
 
@@ -177,12 +207,14 @@
         margin-top: 3rem;
         font-size: 1.2rem;
         text-align: center;
-        margin-left: -1rem;
+        margin-left: -4rem;
+        
     }
 
     footer h6{
         font-size: 1.2rem;
         margin-bottom: 3rem;
+        margin-left: 2rem;
     }
 
 
@@ -191,31 +223,481 @@
         display: block;
         margin-top: 5rem;
         margin-left: 3rem;
-  
 
     }
 
+}
+
+/* min-width: 600px*/
+
+
+@media screen and (min-width:600px) and (max-width:768px) {
+
+    .nav-ul{
+       display: none;
+       width: 100%;
+       flex-direction: column;
+   }
+
+   .nav-ul li a{
+   padding: 10px;
+   }
+
+   .nav-ul.show {
+       display: flex;
+
+   }
+
+   .hamburger{
+       display: block;
+   }
+
+
+   #showcase h6{
+       font-size: 2.2rem;
+       text-align: center;
+       margin-left: -2rem;  
+       
+   }
+   #showcase h1{
+       font-size: 2.5rem;
+       width: 320px;
+       text-align: center;
+       margin-left: 4rem; 
+   
+   }
+
+   .main-cards{
+       display: block;
+       margin-left: -5px;
+   }
+
+   .main-cards h2{
+       font-size: 10px;
+   }
+
+
+   .card-inner{
+       width: 21rem;
+       height: 22rem;
+       margin-bottom: 3rem;
+       margin-left: 0.8rem;
+       overflow: hidden;
+   }
+   .card-text h4{
+       font-size: 1.1rem;
+   }
+
+   .card-text h2{
+       font-size: 1.5rem; 
+       margin-bottom: 2rem;
+   }
+   .section1 h6{
+       font-size: 2rem;
+
+   }
+
+   .section1 p{
+       width: 400px;
+       font-size: 1.2rem;
+       line-height: 1.7rem;
+   }
+   #showcase1{
+       min-height: 600px;
+   }
+
+   #showcase1 h1{
+       font-size: 2.4rem;
+       text-align: center;
+   }
+
+   #showcase1 h6{
+       font-size: 2rem;
+       text-align: center;
+       margin-top: 5rem;
+   }
+
+   #showcase1 p{
+       font-size: 1.1rem;
+       width: 370px;
+       margin-left: -10px;
+       overflow: hidden;
+       
+       margin-top: 2rem;
+   }
+
+   #showcase1 button{
+       padding: 1.2rem 1.1rem;
+       margin: auto;
+       margin-bottom: 2rem;
+       
+   }
+   .main-grid{
+       display: block;
+       margin-left: 4rem;
+   }
+
+   .section3 h6{
+       margin-left: -1rem;
+   }
+
+   .section3 p{
+       margin-bottom: 1.5rem;
+   }
+
+   
+   .showcase3{
+       overflow: hidden;
+       position: relative;
+   }
+
+   .showcase3 p{
+       font-size: 1.1rem;
+       line-height: 1.5rem;
+   }
+
+   .showcase3 span{
+       display: inline-flex;
+   }
+
+   .main-grid2{
+       display: block;
+       margin-left: 7rem;
+       
+   }
+
+
+   .flex{
+       display: block;
+       
+   }
+
+   .showcase5 button{
+       width: 100%;
+       margin-bottom: 3rem;
+   }
+
+   .showcase5 .span{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin: 1rem;
+   }
+
+   .icons i{
+       margin: 1rem;
+   }
+
+   .showcase5 h6{
+       text-align: center;
+   }
+
+
+   .showcase5 h5{
+       font-size: 1.5rem;  
+   }
+
+   .showcase5 .left-button{
+       font-size: 1.5rem; 
+   
+   }
+
+   footer{
+       position: relative;
+       
+   }
+
+   .mini-footer{
+       display: block;
+       
+   }
+
+   .social{
+       position: absolute;
+       top: -3rem;
+       text-align: center;
+       width: 95%;
+   }
+
+   .social a{
+       margin-left: 1.5rem;
+   
+   }
+
+   footer img{
+       display: none;
+   }
+
+   footer i{
+       font-size: 1.7rem;
+       padding-top: 1rem;
+
+   }
+
+   footer p{
+       margin-top: 3rem;
+       font-size: 1.2rem;
+       text-align: center;
+       margin-left: -4rem;
+       
+   }
+
+   footer h6{
+       font-size: 1.2rem;
+       margin-bottom: 3rem;
+       margin-left: 2rem;
+   }
 
 
 
-    
-    
+   .flex4{
+       display: block;
+       margin-top: 5rem;
+       margin-left: 3rem;
 
+   }
 
 }
 
 
 
 
+@media screen and (min-width:768px) and (max-width: 900px) {
+    *{
+        overflow-x: hidden;
+    }
 
-/**@media screen and (max-width:1000px) {
-       *{
-           overflow-x: hidden;
-       }
-
-       .main-cards{
+    .nav-ul{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+ 
+    .nav-ul li a{
+    padding: 10px;
+    }
+ 
+    .nav-ul.show {
+        display: flex;
+ 
+    }
+ 
+    .hamburger{
         display: block;
+    }
+    
+
+   #showcase h6{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-left: -1rem;  
+    
+}
+
+#showcase h1{
+    font-size: 7.5rem; 
+    font-weight: bolder;  
+    width: 600px;
+    text-align: center;
+
+}
+
+.space{
+    width: 80%;
+    margin: auto;
+}
+.main-cards{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+
+#showcase1 h6{
+    text-align: center;
+    margin-left: 4rem;
+}
+#showcase1 h1{
+    margin-left: 4rem;
+    text-align: center;
+    
+    
+}
+
+#showcase1 p{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#showcase1 button{
+    margin: 0 auto;
+}
+
+#showcase1 button{
+    padding: 1.5rem 1.4rem;
+}
+
+#showcase1 h5{
+    font-size: 1.2rem;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
+    margin-left: 2.5rem;
+}
+
+.section3 img{
+    height: 120px;
+    width: 120px;
+
+}
+
+.section3 h6{
+    font-size: 1.1rem;
+}
+
+.section3 p{
+    width: 120px;
+    margin-left: 2rem;
+
+}
+
+.showcase small{
+    margin-bottom: 1rem;
+}
+
+
+.main-grid2{
+    display: block;
+    margin-left: 15rem;
+}
+
+.showcase5 h6{
+    text-align: center;
+}
+
+.flex{
+    display: block;
+}
+
+.showcase5 button{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.showcase5 .span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.span i{
+    margin-bottom: 1rem;
+}
+
+
+footer{
+    position: relative;
+    
+}
+
+.mini-footer{
+    display: block;
+    
+}
+
+.social{
+    position: absolute;
+    top: -3rem;
+    text-align: center;
+    width: 95%;
+}
+
+.social a{
+    margin-left: 1.5rem;
+
+}
+
+footer img{
+    display: none;
+}
+
+footer i{
+    font-size: 1.7rem;
+    padding-top: 1rem;
+
+}
+
+footer p{
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: -4rem;
+    
+}
+
+footer h6{
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    
+}
+
+
+
+.flex4{
+    display: block;
+    margin-top: 5rem;
+    margin-left: 3rem;
+
+}
+  
+
+}
+
+
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    .main-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 100px;
+        grid-row-gap: 100px;
+        
+    }
+
+    input[type=text] {
+        
+        width: 100%;
+        
+        
+    }
+    
+    input[type=email] {
+        width: 100%;
+        
+    }
+    
+    
+    input[type=message] {
+    
+        width: 100%;
+        
+    }
+    
+    
+    .showcase5 button{
+        width: 100%;
+    
     }
 
 
-    }**/
+
+
+
+    
+}
+
+
+
+

@@ -21,13 +21,13 @@
             <div class="logo">
                 <img src="images/restaurant_logo.png" alt="kitchen table">
             </div>
+           
             <!--Navigation-->
             <nav>
                 <button class="hamburger" id="hamburger">
                     <i class="fas fa-bars"></i>
                 </button>
-                <ul id="nav-ul"
-                class="nav-ul">
+                <ul class="nav-ul" id="nav-ul">
                     <li><a href="#">Our Story</a></li>
                     <li><a href="#">Menu</a></li>
                     <li><a href="#">Features</a></li>
@@ -37,8 +37,10 @@
             </nav>
         </header>
         <div>
-            <h6>Because</h6>
-            <h1>YOU'RE WORTH IT</h1>
+            <div class="space">
+                <h6>Because</h6>
+                <h1>YOU'RE WORTH IT</h1>
+            </div>
         </div>
         <!-- Showcase cards -->
         <div>
@@ -68,7 +70,8 @@
 
                 <div class="card-inner">
                     <div class="cards-img">
-                        <img src="images/steak4.jpg" alt="grilled steak">
+                        
+                        
                     </div>
                     <div class="card-text">
                         <h4>Grilled Steak -</h4>
@@ -107,13 +110,12 @@
                 <p>More than 250 dishes and 300 drinks for you.</p>
             </div>
 
-            <button class="left-button" id="btns"
-            onclick="toggleButton()"> <i class="fas fa-address-book"></i>
+            <button class="left-button" id="btns" onclick="toggleButton()"> <i class="fas fa-address-book"></i>
                 <h5>View Menu</h5>
             </button>
         </div>
 
-        <div id="modal">
+        <!--- <div id="modal">
             <div class="modal-header">
                 <h3>MENU</h3>
                 <div id="close">&times;</div>
@@ -124,10 +126,10 @@
                 <h4>Grilled Steak:<span> $15.99</span></h4>
                 <h4>French Fries:<span> $20.99</span></h4>
 
-            </div>
+            </div>-->
 
 
-        </div>
+    </div>
 
 
 
@@ -239,8 +241,9 @@
 
                         <input type="message" placeholder="Write your Message">
 
-                        <button> <div class="buton"> <i class="fas fa-address-book left-button"></i>
-                            <h5>Book</h5>
+                        <button>
+                            <div class="buton"> <i class="fas fa-address-book left-button"></i>
+                                <h5>Book</h5>
                             </div>
                         </button>
                     </form>
@@ -248,25 +251,27 @@
                     <div>
                         <p>In our work we try to use only the most modern, convenient and interesting solutions. We want
                             the template you downloaded look unique and new for such a long time as it is possible.</p>
+                        <div class="box">
+                            <div class="span">
+                                <i class="fas fa-clock-o  heart"></i>
+                                <span>10:00 - 23:00(Mon-Sun)</span>
+                            </div>
 
-                        <div class="span">
-                            <i class="fas fa-clock-o  heart"></i>
-                            <span>10:00 - 23:00(Mon-Sun)</span>
-                        </div>
+                            <div class="span">
+                                <i class="fas fa-map-marker heart"></i>
+                                <span>300 Boylstone Ave E, Seattle WA</span>
+                            </div>
 
-                        <div class="span">
-                            <i class="fas fa-map-marker heart"></i>
-                            <span>300 Boylstone Ave E, Seattle WA</span>
-                        </div>
+                            <div class="span">
+                                <i class="fas fa-phone heart"></i>
+                                <span>732-555-1428 (Callback)</span>
+                            </div>
 
-                        <div class="span">
-                            <i class="fas fa-phone heart"></i>
-                            <span>732-555-1428 (Callback)</span>
-                        </div>
+                            <div class="span">
+                                <i class="fas fa-envelope heart"></i>
+                                <span>your@email.com</span>
+                            </div>
 
-                        <div class="span">
-                            <i class="fas fa-envelope heart"></i>
-                            <span>your@email.com</span>
                         </div>
                     </div>
 
@@ -281,29 +286,29 @@
 
     <footer>
         <div class="mini-footer">
-        <div class="flex4">
-            <div class="image">
-                <img src="images/footer-logo1.png" alt="logo">
+            <div class="flex4">
+                <div class="image">
+                    <img src="images/footer-logo1.png" alt="logo">
+                </div>
+
+                <div class="para">
+                    <p> &copy; 2015 Select</p>
+                    <h6>Designed by Multifour.com</h6>
+                </div>
             </div>
 
-            <div class="para">
-                <p> &copy; 2015 Select</p>
-                <h6>Designed by Multifour.com</h6>
+            <div class="social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-google-plus"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-flickr"></i></a>
+
             </div>
-        </div>
-
-        <div class="social">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-dribbble"></i></a>
-            <a href="#"><i class="fab fa-behance"></i></a>
-            <a href="#"><i class="fab fa-google-plus"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-pinterest"></i></a>
-            <a href="#"><i class="fab fa-flickr"></i></a>
-
-        </div>
         </div>
     </footer>
     <script src="script.js"></script>

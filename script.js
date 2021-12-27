@@ -1,8 +1,8 @@
-const hamburger = document.getElementById('hamburger');
-const navUl = document.getElementById('nav-ul');
+const hamburger = document.querySelector('#hamburger');
+const link = document.querySelector('#nav-ul');
 
 hamburger.addEventListener('click', () => {
-    navUl.classList.toggle('show');
+    link.classList.toggle('show');
 });
 
 /*const modal = document.getElementById('modal');
@@ -36,4 +36,9 @@ function toggleButton(){
         return;
     }
 }*/
+
+window.addEventListener('scroll', function(){
+    var header = document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
 
