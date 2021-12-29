@@ -465,6 +465,7 @@ nav{
     background-position: center;
       
 }
+
 .inner-wrap{
     width: 85%;
     margin: auto;
@@ -474,10 +475,12 @@ nav{
 
 
 .flex{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 15rem;
-    padding-bottom: 5rem;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    
+      
 }
 
 
@@ -504,7 +507,7 @@ input[type=text] {
 
 input[type=email] {
     display: inline;
-    width: 130%;
+    width: 100%;
     height: 4rem;
     background: transparent;
     font-size: 1rem;
@@ -516,7 +519,7 @@ input[type=email] {
 
 input[type=message] {
     display: inline;
-    width: 130%;
+    width: 100%;
     height: 9rem;
     border-top: none;
     border-bottom: 0.8px solid grey;
@@ -530,7 +533,7 @@ input[type=message] {
 
 .showcase5 button{
     padding: 1.3rem 2rem;
-    width: 130%;
+    width: 100%;
     margin-top: 3rem;
     color: white;
     background-color: rgb(255, 155, 53);
@@ -567,7 +570,7 @@ button .buton{
 }
 
 .showcase5 p{
-    width: 100%;
+    width: 50%;
     color: white;
     text-align: center;
     line-height: 2rem;
@@ -606,6 +609,39 @@ footer{
     align-items: center;
     padding-top: 3rem;
 }
+/*contact us styling*/
+/*
+.section{
+    background-color: coral;
+    width: 800px;
+    height: 500px;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.section h1{
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 2rem;
+    color: white;
+
+}
+
+
+.section .container{
+    width: 80%;
+    margin: auto;
+}
+
+.section p{
+    width: 700px;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+}*/
+
+
 
 
 
