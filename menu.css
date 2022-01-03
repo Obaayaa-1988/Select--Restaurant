@@ -492,7 +492,7 @@ nav{
    padding-bottom: 5rem; 
 
 }
-input[type=text] {
+.form-input {
     display: inline;
     width: 100%;
     height: 4rem;
@@ -505,7 +505,7 @@ input[type=text] {
     outline: none;
 }
 
-input[type=email] {
+.form-mail {
     display: inline;
     width: 100%;
     height: 4rem;
@@ -517,7 +517,7 @@ input[type=email] {
 }
 
 
-input[type=message] {
+.form-message{
     display: inline;
     width: 100%;
     height: 9rem;
@@ -596,6 +596,10 @@ button .buton{
     padding-bottom: 2rem ;
 }
 
+
+
+
+
 /**Styling Footer**/
 footer{
     min-height: 270px;
@@ -609,39 +613,6 @@ footer{
     align-items: center;
     padding-top: 3rem;
 }
-/*contact us styling*/
-/*
-.section{
-    background-color: coral;
-    width: 800px;
-    height: 500px;
-    border-radius: 15px;
-    margin: auto;
-    margin-top: 5rem;
-}
-
-.section h1{
-    text-align: center;
-    font-size: 4rem;
-    padding-top: 2rem;
-    color: white;
-
-}
-
-
-.section .container{
-    width: 80%;
-    margin: auto;
-}
-
-.section p{
-    width: 700px;
-    text-align: center;
-    line-height: 1.5rem;
-    font-size: 1.5rem;
-}*/
-
-
 
 
 
